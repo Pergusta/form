@@ -1,124 +1,135 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="https://icons.veryicon.com/png/o/miscellaneous/designer-icon-1/form-18.png" type="image/png">
-    <title>Contatos</title>
-  </head>
-  <form action="form">
-  <body>
-	<header>
-        <h1>Cadastro Pessoal</h1>
-		<img src="/img/logo.jpg" alt="imagem de icone de cadastro">
-	<hr size="7" color="gray">
-	</header>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="https://icons.veryicon.com/png/o/miscellaneous/designer-icon-1/form-18.png" type="image/png">
+	<title>Contatos</title>
+</head>
+<form action="form">
+
+	<body>
+		<header>
+			<h1>Cadastro Pessoal</h1>
+			<img src="/img/logo.jpg" alt="imagem de icone de cadastro">
+			<hr size="7" color="gray">
+		</header>
 		<div class="data">
 			<fieldset>
-			<legend>Dados Pessoais</legend>
-			<p>
-			<label for="nome">Nome:</label>
-			<input type="text" name="nome" required>
-			<label for="email">E-mail:</label>
-			<input type="email" name="email" size="30" required>
-			</p>
-			<p>
-			<label for="dataNascimento">Nascimento:</label>
-			<input type="date" name="dataNascimento" required>
-			<p>
-			<label for="rg">RG:</label>
-			<input type="text" name="rg" size="15">
-			</p>
-			<p>
-			<label for="cpf">CPF:</label>
-			<input type="text" name="cpf" maxLength="11" required>
-			</p>
+				<legend>Dados Pessoais</legend>
+				<p>
+					<label for="nome">Nome:</label>
+					<input type="text" name="nome" required>
+					<label for="email">E-mail:</label>
+					<input type="email" name="email" size="30" required>
+				</p>
+				<p>
+					<label for="dataNascimento">Nascimento:</label>
+					<input type="date" name="dataNascimento" required>
+				<p>
+					<label for="rg">RG:</label>
+					<input type="text" name="rg" size="15" required>
+				</p>
+				<p>
+					<label for="cpf">CPF:</label>
+					<input type="text" name="cpf" maxLength="11" required>
+				</p>
 			</fieldset>
 		</div>
 		<div class="address">
 			<fieldset>
-			<legend>Endereço</legend>
-			<p>
-			<label for="rua">Rua:</label>
-			<input type="text" name="rua" required>
-			<label for="numeroCasa">Número:</label>
-			<input id="número da casa" type="numeroCasa" min="0" max="9999" oninput="validity.valid||(value='');" required>
-			</p>
-			<p>
-			<label for="bairro">Bairro:</label>
-			<input type="text" name="bairro" required>
-			<p>
-			<label for="estado">Estado:</label>
-			<select name="estado">
-    			<option value="AC">Acre</option>
-    			<option value="AL">Alagoas</option>
-    			<option value="AP">Amapá</option>
-    			<option value="AM">Amazonas</option>
-    			<option value="BA">Bahia</option>
-    			<option value="CE">Ceará</option>
-    			<option value="DF">Distrito Federal</option>
-    			<option value="ES">Espírito Santo</option>
-    			<option value="GO">Goiás</option>
-    			<option value="MA">Maranhão</option>
-    			<option value="MT">Mato Grosso</option>
-    			<option value="MS">Mato Grosso do Sul</option>
-    			<option value="MG">Minas Gerais</option>
-   				<option value="PA">Pará</option>
-   				<option value="PB">Paraíba</option>
-   				<option value="PR">Paraná</option>
-   				<option value="PE">Pernambuco</option>
-   				<option value="PI">Piauí</option>
-   				<option value="RJ">Rio de Janeiro</option>
-   				<option value="RN">Rio Grande do Norte</option>
-   				<option value="RS">Rio Grande do Sul</option>
-  				<option value="RO">Rondônia</option>
-   				<option value="RR">Roraima</option>
-   				<option value="SC">Santa Catarina</option>
-   				<option value="SP">São Paulo</option>
-   				<option value="SE">Sergipe</option>
-   				<option value="TO">Tocantins</option>
-  				<option value="EX">Estrangeiro</option>
-			</select>
-			</p>
-			<p>
-			<label for="cidade">Cidade:</label>
-			<input type="text" name="cidade" required>
-			</p>
-			<p>
-			<label for="cep">CEP:</label>
-			<input type="text" name="cep" required>
-			</p>
+				<legend>Endereço</legend>
+				<p>
+					<label for="rua">Rua:</label>
+					<input type="text" name="rua" required>
+					<label for="numeroCasa">Número:</label>
+					<input id="número da casa" type="numeroCasa" min="0" max="9999"
+						oninput="validity.valid||(value='');" required>
+				</p>
+				<p>
+					<label for="bairro">Bairro:</label>
+					<input type="text" name="bairro" required>
+				<p>
+					<label for="estado">Estado:</label>
+					<select name="estado">
+						<option value="AC">Acre</option>
+						<option value="AL">Alagoas</option>
+						<option value="AP">Amapá</option>
+						<option value="AM">Amazonas</option>
+						<option value="BA">Bahia</option>
+						<option value="CE">Ceará</option>
+						<option value="DF">Distrito Federal</option>
+						<option value="ES">Espírito Santo</option>
+						<option value="GO">Goiás</option>
+						<option value="MA">Maranhão</option>
+						<option value="MT">Mato Grosso</option>
+						<option value="MS">Mato Grosso do Sul</option>
+						<option value="MG">Minas Gerais</option>
+						<option value="PA">Pará</option>
+						<option value="PB">Paraíba</option>
+						<option value="PR">Paraná</option>
+						<option value="PE">Pernambuco</option>
+						<option value="PI">Piauí</option>
+						<option value="RJ">Rio de Janeiro</option>
+						<option value="RN">Rio Grande do Norte</option>
+						<option value="RS">Rio Grande do Sul</option>
+						<option value="RO">Rondônia</option>
+						<option value="RR">Roraima</option>
+						<option value="SC">Santa Catarina</option>
+						<option value="SP">São Paulo</option>
+						<option value="SE">Sergipe</option>
+						<option value="TO">Tocantins</option>
+						<option value="EX">Estrangeiro</option>
+					</select>
+				</p>
+				<p>
+					<label for="cidade">Cidade:</label>
+					<input type="text" name="cidade" required>
+				</p>
+				<p>
+					<label for="cep">CEP:</label>
+					<input type="text" name="cep" placeholder="00000-000" pattern="\d{5}\-\d{3}" required>
+				</p>
 			</fieldset>
 		</div>
 		<div class="login">
 			<fieldset>
-			<legend>Login</legend>
-			<p>
-			<label for="imagemPerfil">Imagem de perfil:</label>
-			<input type="file" name="imagemPerfil" required>
-			<p>
-			<label for="login">Login de usuário:</label>
-			<input type="text" name="login" required>
-			</p>
-			<p>
-			<label for="senha">Senha:</label>
-			<input type="password" name="senha" required>
-			</p>
-			<p>
-			<label for="confirmarSenha">Confirme a senha:</label>
-			<input type="password" name="confirmarSenha" required>
-			</p>
+				<legend>Login</legend>
+				<p>
+					<label for="arquivo">Imagem de perfil:</label>
+					<input type="file" name="arquivo" accept="image/*" required>
+				<p>
+					<label for="login">Login de usuário:</label>
+					<input type="text" name="login" minlength="6" maxlength="10" required>
+				</p>
+				<p>
+					<label for="senha">Senha:</label>
+					<input type="password" name="senha" required>
+				</p>
+				<p>
+					<label for="confirmarSenha">Confirme a senha:</label>
+					<input type="password" name="confirmarSenha" required>
+				</p>
 			</fieldset>
 		</div>
-	<footer>
-	<p>
-	<input type="submit" value="Enviar Dados">
-	<input type="reset" value="Limpar">
-	</p>
-	<h6><a href="">Termo de Uso</a><h6>
-	<h6><a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm">LGPD para saber mais</a><h6>
-	</footer>
-  </body>
-  </form>
+		<div>
+			<input type="submit" name="botao_enviar" value="Enviar Dados">
+			<input type="reset" name="botao_limpar" value="Limpar">
+		</div>
+		<footer>
+			<div>
+				<p>
+				<h6><a href="">Termo de Uso</a>
+					<h6>
+						<h6><a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm">LGPD para
+								saber mais</a>
+							<h6>
+								</p>
+			</div>
+		</footer>
+	</body>
+</form>
+
 </html>
